@@ -1,0 +1,20 @@
+2023-07-11 18:33:13.733  INFO 17876 --- [main] c.e.common.OfficeCommonApplication       : Starting OfficeCommonApplication on DESKTOP-B82MF7O with PID 17876 (F:\online-office\office-common\target\classes started by WQ in F:\online-office)
+2023-07-11 18:33:13.736  INFO 17876 --- [main] c.e.common.OfficeCommonApplication       : No active profile set, falling back to default profiles: default
+2023-07-11 18:33:14.066  INFO 17876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2023-07-11 18:33:14.079  INFO 17876 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 JPA repository interfaces.
+2023-07-11 18:33:14.327  INFO 17876 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-11 18:33:14.335  INFO 17876 --- [main] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Starting...
+2023-07-11 18:33:14.510  INFO 17876 --- [main] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Start completed.
+2023-07-11 18:33:14.561  INFO 17876 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-11 18:33:14.615  INFO 17876 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.18.Final
+2023-07-11 18:33:14.624  INFO 17876 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2023-07-11 18:33:14.624  INFO 17876 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2023-07-11 18:33:14.631  INFO 17876 --- [main] c.e.common.OfficeCommonApplication       : Started OfficeCommonApplication in 1.204 seconds (JVM running for 1.752)
+2023-07-11 18:33:14.747  INFO 17876 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2023-07-11 18:33:14.864  INFO 17876 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-07-11 18:33:15.053  INFO 17876 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-11 18:33:15.061  INFO 17876 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-11 18:34:15.065  INFO 17876 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-11 18:34:15.067  INFO 17876 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-11 18:34:15.067  INFO 17876 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Shutdown initiated...
+2023-07-11 18:34:15.073  INFO 17876 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : DateSourceHikariCP - Shutdown completed.

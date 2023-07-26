@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: chat
+  datasource:
+    username: root
+    password: 179220
+    url: jdbc:mysql://localhost:3306/javaee?serverTimezone=GMT%2B8&useSSL=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    thymeleaf:
+      cache: false
+  cloud:
+    nacos:
+      server-addr: localhost:8848 #nacos服务地址
+      discovery:
+        cluster-name: CDU #配置集群名称，也就是机房位置
+        namespace: 7f2be4fc-8487-4975-a2eb-6da782e228d5
+server:
+  port: 8082
+
+mybatis:
+  type-aliases-package: cdu.gu.entity
+  mapper-locations: classpath:mapper/*.xml
+#eureka:
+#  client:
+#    service-url: #eureka的地址信息
+#      defaultZone: http://127.0.0.1:10086/eureka
+PersonalService:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.alibaba.cloud.nacos.ribbon.NacosRule #负载均衡策略

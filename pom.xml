@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cdu.gu</groupId>
+  <artifactId>online-office</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.3.9.RELEASE</version>
+  </parent>
+
+  <modules>
+    <module>common</module>
+      <module>eureka-server</module>
+    <module>online-office-user</module>
+    <module>online-office-chat</module>
+  </modules>
+  <packaging>pom</packaging>
+  <name>online-office Maven Webapp</name>
+<!--定义版本号-->
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+<!--    springcloud的版本-->
+    <spring-cloud.version>Hoxton.SR9</spring-cloud.version>
+<!--    springcloud阿里巴巴的版本-->
+    <spring-cloud-alibaba.version>2.2.6.RELEASE</spring-cloud-alibaba.version>
+    <java.version>17</java.version>
+  </properties>
+<!--  dependencyManagement:只负责jar的管理,不负责jar的下载,子模块在引入时不需要在指定版本号-->
+  <dependencyManagement>
+  <dependencies>
+<!--    springcloud-->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-dependencies</artifactId>
+      <version>Hoxton.SR10</version>
+      <type>pom</type>
+      <scope>import</scope>
+    </dependency>
+<!--    nacos管理依赖-->
+    <dependency>
+      <groupId>com.alibaba.cloud</groupId>
+      <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+      <version>2.2.5.RELEASE</version>
+      <type>pom</type>
+      <scope>import</scope>
+    </dependency>
+  </dependencies>
+
+  </dependencyManagement>
+
+</project>
