@@ -1,13 +1,12 @@
 package cdu.gu.chat.service.impl;
 
-import cdu.gu.chat.clients.UserClient;
 import cdu.gu.chat.mapper.TwoChatMapper;
 import cdu.gu.chat.service.TwoChatService;
-import cdu.gu.entity.Chat;
 import cdu.gu.entity.User;
+import cdu.gu.feign.clients.UserClient;
+import cdu.gu.entity.Chat;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 

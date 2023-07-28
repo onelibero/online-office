@@ -17,6 +17,7 @@
       <module>eureka-server</module>
     <module>online-office-user</module>
     <module>online-office-chat</module>
+      <module>feign-api</module>
   </modules>
   <packaging>pom</packaging>
   <name>online-office Maven Webapp</name>
