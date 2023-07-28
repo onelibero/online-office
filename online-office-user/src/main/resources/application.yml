@@ -1,6 +1,9 @@
+logging:
+  level:
+    cdu.gu: debug
 spring:
-  application:
-    name: user
+#  application:
+#    name: user
   datasource:
     username: root
     password: 179220
@@ -8,11 +11,11 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   thymeleaf:
     cache: false
-  cloud:
-    nacos:
-      server-addr: localhost:8848 #nacos服务地址
-      discovery:
-        cluster-name: SH
+#  cloud:
+#    nacos:
+#      server-addr: localhost:8848 #nacos服务地址
+#      discovery:
+#        cluster-name: SH
 server:
   port: 8081
 

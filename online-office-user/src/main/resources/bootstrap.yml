@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: userservice
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      config:
+        file-extension: yaml #文件后缀名
+      discovery:
+        namespace: 7f2be4fc-8487-4975-a2eb-6da782e228d5
